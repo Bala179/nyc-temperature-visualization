@@ -184,8 +184,9 @@ server <- function(input, output, session) {
     current_date_time_utc <- with_tz(current_date_time_ny, tzone = "UTC")
     
     # Date validation
-    max_valid_date <- as.POSIXct(tail(colnames(nyc_extracted_temps, 1)), 
-                                 format="X%Y.%m.%d.%H.%M.%S")
+    max_valid_date <- as.POSIXct(tail(colnames(nyc_extracted_temps), 1), 
+                                 format="X%Y.%m.%d.%H.%M.%S", tz="UTC")
+    
     validate(
       need(current_date_time_utc >= as.Date("2020-01-01"), 
            "Date must be in 2020 or after (by UTC)"),
