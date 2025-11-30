@@ -11,8 +11,8 @@ This is an R Shiny app that has been deployed on Posit. It can be viewed [here](
 ## 1. Data
 
 Folder containing data used in analysis:
-a. `nyc_extracted_temps.csv`: Contains zipcode-wise hourly temperatures in NYC from 2020 onwards. Temperatures have been recorded at intervals of 3 hours. All dates and times are in UTC.
-b. `nyc_daily_XXX.csv` (`XXX` can be `avg`, `min`, or `max`): Contains daily average, minimum, and maximum zipcode-wise temperatures for each day in NY local time.
+  - `nyc_extracted_temps.csv`: Contains zipcode-wise hourly temperatures in NYC from 2020 onwards. Temperatures have been recorded at intervals of 3 hours. All dates and times are in UTC.
+  - `nyc_daily_XXX.csv` (`XXX` can be `avg`, `min`, or `max`): Contains daily average, minimum, and maximum zipcode-wise temperatures for each day in NY local time.
 
 ## 2. Code
 
