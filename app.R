@@ -117,7 +117,7 @@ server <- function(input, output, session) {
           new_hr <- hr
         }
         
-        uneven_choices <- c(2, 4, 7, 11, 14, 17, 20, 23)
+        uneven_choices <- c(2, 4, 7, 10, 13, 16, 19, 22)
         updateSliderTextInput(session, "hr",
                               label = "Choose an hour (in NY local time)",
                               choices = uneven_choices,
